@@ -1,0 +1,39 @@
+.container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  height: 550px;
+  overflow-y: auto;
+}
+
+.list {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filtered {
+  margin: 0.4em 0;
+
+  & button {
+    margin: 0 0.2em;
+    border-radius: .2em;
+    border: none;
+    /* color: rgb(0, 0, 0); */
+    box-shadow: 2px 2px 5px rgb(19, 112, 117);
+    background: linear-gradient(66deg, rgb(235, 190, 214) 0%, rgba(4, 152, 157, 0.699) 100%);
+    transition: scale .2s linear;
+    cursor: pointer;
+    &:hover {
+      scale: 1.05;
+    }
+  }
+}
+
+button.active {
+  color: #fff;
+}

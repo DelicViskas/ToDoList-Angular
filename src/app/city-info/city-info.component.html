@@ -1,0 +1,11 @@
+
+<div class="city-info">
+  <div class="photos">@for (photo of photos; track photo) {<img [src]="photo"/>}</div>
+  <h1>{{city}}</h1>
+  <p>Население: <strong>{{population | number}}</strong> человек</p>
+  <p>Достопримечательности:</p>
+  <ul>
+    @for (attraction of attractions; track attraction) {<li><strong> {{attraction.name}}</strong>: {{attraction.description}} </li>}
+  </ul>
+  <p>Количество достопримечательностей, которые нужно посетить: <strong>{{ getAttractionCount() }}</strong></p>
+</div>

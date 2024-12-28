@@ -1,0 +1,11 @@
+<div class="container">
+  <todo-input (taskAdded)="addTodo($event)" (removeCompleted)="removeCompletedTodos()"/>
+  <div class="filtered">
+    @for(btn of filterButtons; track btn.text;let i = $index) {<button [ngClass]="{'active': activeIndex === i}" (click)="btn.click()">{{btn.text}}</button>}
+  </div>
+  <div class="list">
+    @for(todo of todolist; track todo.id) {<todo-item [todo]="todo" (remove)="removeTodo($event)" 
+    (toggle)="toggleCompleted(todo)"/>}
+    
+  </div>
+</div>

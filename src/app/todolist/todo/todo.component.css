@@ -1,0 +1,39 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px #909090;
+  padding: 5px;
+  transition: scale .2s linear;
+  border-radius: .2em;
+  &>div {
+    display: flex;
+    align-items: center;
+  }
+  &:hover {
+    scale: 1.02;
+  }
+}
+
+button, input {
+  height: 18px;
+  aspect-ratio: 1;
+  border: none;
+  background-color: transparent;
+  transition: rotate .2s linear,scale .2s linear;
+  cursor: pointer;
+  
+  
+}
+button {
+  scale: 1.1;
+  &:hover {
+    rotate: 90deg;
+  }
+}
+input {
+  &:hover {
+    scale: 1.2;
+  }
+}
+

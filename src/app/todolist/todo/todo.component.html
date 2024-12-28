@@ -1,0 +1,7 @@
+<div class="todo">
+  <p>{{todo?.text}}</p>
+  <div>
+    <input type="checkbox" [checked]="todo?.completed" (change)="toggleTodo()">
+    <button (click)="removeTodo()">❌</button>
+  </div>
+</div>
