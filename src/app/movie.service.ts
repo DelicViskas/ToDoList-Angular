@@ -35,7 +35,7 @@ export interface movieDetails {
 })
 export class MovieService {
   private apiKey = 'a2b07930&s';
-  private url = 'http://www.omdbapi.com/';
+  private url = 'https://www.omdbapi.com/';
 
   constructor(private http: HttpClient) { }
 
