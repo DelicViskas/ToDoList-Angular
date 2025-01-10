@@ -1,0 +1,4 @@
+<div class="previewMovie" (click)="onMovieClick()">
+  <img class="moviePoster" [src]="movie?.Poster" alt="poster">
+  <a href="https://www.imdb.com/title/{{movie?.imdbID}}">{{movie?.Title}}</a>
+</div>

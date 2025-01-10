@@ -1,0 +1,14 @@
+<div class="container">
+    <input class="search" type="text" [(ngModel)]="searchQuery" placeholder="Search for movies...">
+    <button class="searchBtn" (click)="searchMovies()">Search</button>
+  
+  <div class="wrapper">
+    @if(movies.length > 0){
+        @for (movie of movies; track movie.imdbID) {<app-movie-preview [movie]="movie" (movieSelected)="openModal($event)"></app-movie-preview>}}
+    @if(selectedMovie) {
+      <app-movie-modal [movie]="selectedMovie" (close)="closeModal()"></app-movie-modal>
+    }
+  </div>
+</div>
+
+

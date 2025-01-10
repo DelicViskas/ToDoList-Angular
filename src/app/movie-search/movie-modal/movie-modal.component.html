@@ -1,0 +1,19 @@
+<div class="modal">
+  <div class="infoFilm">
+    <button class="close" (click)="onClose()"></button>
+    <img class="poster" [src]="movie?.Poster" alt="Poster" />
+    <div class="info">
+      <h3 class="title">{{movie?.Title}}</h3>
+      <span>Genres: <span>{{movie?.Genre}}</span></span>
+      <span>imdbRating: <span>{{movie?.imdbRating}}</span></span>
+      <span>Language: <span>{{movie?.Language}}</span></span>
+      <span>Country: <span>{{movie?.Country}}</span></span>
+      <span>Awards: <span>{{movie?.Awards}}</span></span>
+      <span>Director: <span>{{movie?.Director}}</span></span>
+      <span>Writers: <span>{{movie?.Writer}}</span></span>
+      <span>Actors: <span>{{movie?.Actors}}</span></span>
+      <span class="plot">Plot: <span>{{movie?.Plot}}</span></span>
+      <a target="_blank" [href]="'https://www.imdb.com/title/' + movie?.imdbID + '/'">www.imdb.com</a>
+    </div>
+  </div>
+</div>

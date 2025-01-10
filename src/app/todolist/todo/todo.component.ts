@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-let getId =  1;
+
 
 @Component({
   selector: 'todo-item',
